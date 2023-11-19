@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
+import '../styles/blog.css';
 
 const shortcodes = { Link }; // Provide common components here
 
