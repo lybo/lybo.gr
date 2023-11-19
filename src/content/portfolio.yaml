@@ -1,0 +1,54 @@
+name: Lybo
+
+focusOn: Reactjs
+
+topSkills:
+  - name: Javascript
+  - name: Nodejs
+  - name: PostgreSQL
+
+frameworks:
+  - name: Reactjs
+  - name: Nextjs
+  - name: Gatsbyjs
+  - name: Vuejs
+  - name: Sass
+  - name: Tailwind CSS
+
+services:
+  -
+    name: AWS lambda
+    url: https://aws.amazon.com/lambda/
+  -
+    name: supabase
+    url: https://supabase.com/
+  -
+    name: firebase
+    url: https://firebase.google.com/
+  -
+    name: sanity.io
+    url: https://www.sanity.io/
+  -
+    name: netlify
+    url: https://www.netlify.com/
+  -
+    name: vercel
+    url: https://vercel.com/
+
+workHistory:
+  -
+    name: 'Djakne'
+    role: 'Web developer'
+    period: 'January 2017 - present'
+    active: true
+  -
+    name: 'Playtech Sports (Mobenga)'
+    role: 'Front-end developer'
+    period: 'January 2010 - January 2017'
+    active: false
+  -
+    name: 'Freelancer'
+    role: 'Web developer'
+    period: 'January 2007 - January 2009'
+    active: false
+
