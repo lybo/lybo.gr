@@ -18,9 +18,9 @@ const HomeSidebar: React.FC = () => {
             <img
               src={logo}
               alt="lybo"
-              className="block rounded-full relative z-10 w-56 h-56 lg:w-36 lg:h-36 border-2 border-lead transform duration-300 group-hover:translate-x-6"
+              className="block rounded-full relative z-10 w-56 h-56 lg:w-36 lg:h-36 border-2 border-lead transform duration-300 group-hover:translate-x-6 shadow-sm"
             />
-            <div className="absolute inset-0 rounded-full bg-lead z-9 transform translate-x-12 duration-300 group-hover:translate-x-6"></div>
+            <div className="absolute inset-0 rounded-full bg-lead z-9 transform translate-x-12 duration-300 group-hover:translate-x-6 shadow-sm" />
           </div>
           <br />
           <div className="inline-flex bg-front mt-6 w-auto">

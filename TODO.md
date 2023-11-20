@@ -4,6 +4,7 @@
   - better code
   - make `Case`, `Solution` tag
   - make external links
+  - dedicated css - DONE
 - Remove About page - DONE
 - make script to deploy github pages
 - lybo.gr domain name

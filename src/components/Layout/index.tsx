@@ -16,8 +16,8 @@ const Layout: React.FC = (props: Props) => {
         <div className="relative bg-back flex items-center justify-center pt-5 pb-4 sticky top-0 z-30">
           <div className="absolute top-5 left-0 lg:left-24 flex items-center  group">
             <div className="relative">
-              <div className="rounded-full w-5 h-5 bg-white border-2 border-gray-300" />
-              <div className="absolute z-9 rounded-full w-5 h-5 bg-lead inset-0 rounded-full transform translate-x-2 duration-300 lg:group-hover:translate-x-24 border-2 border-gray-300" />
+              <div className="rounded-full w-5 h-5 bg-white shadow-md" />
+              <div className="absolute z-9 rounded-full w-5 h-5 bg-lead inset-0 rounded-full transform translate-x-2 duration-300 lg:group-hover:translate-x-24 shadow-md" />
             </div>
             <a href="/" className='ml-6 font-header font-bold text-front text-md invisible lg:visible'>Lybo</a>
           </div>
