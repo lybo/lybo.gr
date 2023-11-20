@@ -9,9 +9,11 @@ const HomeSidebar: React.FC = () => {
           <h2 className="font-header font-light text-front text-2xl leading-none mb-4 ml-4">
             Web Developer
           </h2>
+          {/*
           <h1 className="font-header font-black text-front text-5xl leading-none break-words mb-6 ml-10">
             Lybo
           </h1>
+          */}
           <div className="relative inline-block group">
             <img
               src={logo}

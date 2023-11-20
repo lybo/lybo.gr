@@ -1,0 +1,10 @@
+- Add logo to sticky header - DONE
+- Fix the link in the main blog page - DONE
+- Make better the mdx post template
+  - better code
+  - make `Case`, `Solution` tag
+  - make external links
+- Remove About page - DONE
+- make script to deploy github pages
+- lybo.gr domain name
+- add link for downloading my CV

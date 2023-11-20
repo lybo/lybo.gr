@@ -1,16 +1,73 @@
 ---
-title: Hello, world!
+title: Build dynamically classnames in Tailwind CSS
 slug: /blog/hello-world
 date: 2019-01-29
 type: How-to
 image: ../../images/tailwindcss.png
 tags:
-  - vuejs
-  - pinia
+  - tailwindcss
 ---
 
-# Hello, world! 222
+**Tailwind official documentation says:**
+> Don’t use props to build class names dynamically
 
+<br/>
+<br/>
+*theme/colors.js*
 ```
-const type = '10';
+module.exports = {
+  'skill-1': '#9079DB',
+  'skill-2': '#E58B5F',
+  'skill-3': '#3BA1DB',
+};
 ```
+
+<br/>
+<br/>
+*Component.tsx*
+```
+const Skill: React.FC<Props> = (props) => {
+  const { title, i } = props;
+
+  return (
+    <li
+      className={`border-skill-${i} relative flex justify-center items-center rounded-full border-2 group`}
+    >
+      <span
+        className={`absolute font-header font-semibold text-front text-sm md:text-base px-2 text-center`}
+      >
+        {title}
+      </span>
+      <svg
+        className={`w-full fill-skill-${i} opacity-55 m-2 group-hover:rotate-90 duration-900 transition-transform`}
+        viewBox="460.5 460.5 79 79"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+```
+
+<br/>
+<br/>
+<br/>
+## Solution
+
+<br/>
+<br/>
+*tailwind.config.js*
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
+  ],
+  safelist: [
+    {
+      pattern: /(bg|text|fill)-skill-(1|2|3)/,
+      variants: ['lg', 'hover', 'focus', 'lg:hover'],
+    },
+  ],
+  // ...
+}
+```
+
+[More details from the official docs](https://tailwindcss.com/docs/content-configuration#safelisting-classes)

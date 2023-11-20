@@ -1,0 +1,39 @@
+.blog {
+  pre {
+    /* overflow-x: auto; */
+    background: #414449;
+    color: #b3bccc;
+    padding: 15px;
+    font-size: 13pt;
+    tab-size: 4;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.35);
+    margin: 20px 0;
+    text-wrap: wrap;
+  }
+
+  pre::-webkit-scrollbar {
+    background: #b3bccc;
+  }
+  pre::-webkit-scrollbar-thumb {
+    background: #eee;
+    border-radius: 5px;
+  }
+
+  blockquote {
+    @apply p-4 my-4 border-s-4 border-gray-300 bg-gray-50  text-xl italic font-medium leading-relaxed text-gray-900;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  a {
+    @apply border-b-2 border-lead;
+  }
+
+  a:hover {
+    @apply border-back;
+  }
+}

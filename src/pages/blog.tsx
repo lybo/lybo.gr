@@ -2,8 +2,11 @@ import * as React from 'react';
 import type { PageProps } from 'gatsby';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import dayjs from 'dayjs';
 import '../styles/work-history.css';
 import Layout from '../components/Layout';
+
+// https://www.gatsbyjs.com/docs/how-to/images-and-media/working-with-images-in-markdown/
 
 interface Props extends PageProps {
   data: any;
@@ -15,7 +18,7 @@ const BlogPage: React.FC<PageProps> = (props: Props) => {
 
   return (
     <Layout pathname={location.pathname}>
-      <h1 className="text-center font-header font-bold text-5xl mt-5 mb-5">Blog</h1>
+      <h1 className="text-center font-header font-bold text-5xl mt-5 mb-10">Blog</h1>
       <div className="flex flex-col items-center">
         <div className="lg:w-3/4">
           {posts.map((post: any) => {
@@ -36,7 +39,7 @@ const BlogPage: React.FC<PageProps> = (props: Props) => {
                     <span className="block font-header font-bold text-2xl mb-3">
                       {post.frontmatter.title}
                     </span>
-                    <span className="block text-md mb-3 opacity-50">{post.frontmatter.date}</span>
+                    <span className="block text-md mb-3 opacity-50">{dayjs(post.frontmatter.date).format('YYYY-MM-DD')}</span>
                   </div>
                 </a>
               </div>

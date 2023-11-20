@@ -92,6 +92,7 @@ const IndexPage: React.FC<PageProps> = (props) => {
               </ul>
             </div>
           </div>
+          {/*
           <h5 className="font-header font-semibold text-front text-sm uppercase pb-3">About</h5>
           <div className="font-text text-sm pb-6">
             <p className="pb-6">
@@ -104,7 +105,6 @@ const IndexPage: React.FC<PageProps> = (props) => {
               mentality to derive convergence on cross-platform integration.
             </p>
           </div>
-          {/*
           <h5 className="font-header font-semibold text-front text-sm uppercase pb-3">Projects</h5>
           <div className="border-t-4 border-line relative flex flex-wrap bg-back-light p-4 lg:p-8 bg-no-repeat text-sm mb-6 bg-project">
             <h4>JS GraphQL library</h4>
